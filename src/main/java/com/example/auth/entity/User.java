@@ -1,7 +1,6 @@
 package com.example.auth.entity;
 
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,6 +15,10 @@ public class User {
     private String password;
     private String role;
     private boolean isEnabled;
+
+    public User() {
+        // Default constructor
+    }
 
     public User(Long userId, String username, String password, String role, boolean isEnabled) {
         this.userId = userId;
